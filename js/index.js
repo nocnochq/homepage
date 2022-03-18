@@ -5,6 +5,12 @@ const rotationDescriptions = document.getElementsByClassName(
 );
 const rotationPic = document.getElementsByClassName("rotation-pic")[0];
 
+(function initImage() {
+  ["data", "drive", "office", "task", "wifi"].forEach((item) => {
+    new Image(`./image/pages/${item}.png`);
+  });
+})();
+
 function removeActive() {
   [].forEach.call(rotationAllows, (item) => {
     item.classList.remove("active");
