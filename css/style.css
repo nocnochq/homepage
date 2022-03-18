@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+html {
+  position: relative;
+  min-width: 360px;
+}
+
+body {
+  position: relative;
+  min-width: 360px;
+  overflow-x: hidden;
+}
+
+.fixed-header {
+  position: fixed;
+  background-color: white;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.08);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  min-width: 360px;
+  z-index: 1;
+}
+
+.header-between-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.logo-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.08);
+}
+
+.navigate-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sign-up-button {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.04));
+  border-radius: 6px;
+  color: #141414;
+  font-weight: 510;
+  background-color: white;
+  cursor: pointer;
+}
+
+.sign-up-button:hover {
+  background-color: #eee;
+}
+
+.sign-up-button:active {
+  background-color: #ddd;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  background-image: url("../image/gradient-blue.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow: hidden;
+}
+
+.gradient-title {
+  background-image: linear-gradient(135deg, #2d3d5d, #79a3d5);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.login-text {
+  font-weight: 510;
+  color: #141414;
+}
+.main-title {
+  font-family: "SF Pro";
+  color: #000000;
+}
+.main-description1 {
+  font-family: "SF Pro";
+  font-weight: 510;
+  color: #000000;
+}
+.main-description2 {
+  font-weight: 400;
+  color: #000000;
+  font-family: "Roboto";
+}
+
+.button-black {
+  background: linear-gradient(4.38deg, #41464b 0.17%, #555c63 99.62%);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.button-black:hover {
+  background: linear-gradient(4.38deg, #333 0.17%, #555c63 99.62%);
+}
+.button-black:active {
+  background: linear-gradient(4.38deg, #111 0.17%, #555c63 99.62%);
+}
+.rotation-pic {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  filter: drop-shadow(0px 8px 60px rgba(0, 0, 0, 0.04));
+  border-radius: 8px;
+}
+
+.rotation-list {
+  display: flex;
+  justify-content: space-between;
+}
+.rotation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rotation-item-card {
+  background: #ffffff;
+  border: 2.58333px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  box-shadow: 0px 2.58333px 5.16667px rgba(0, 0, 0, 0.04);
+  border-radius: 15.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rotation-item-description {
+  font-family: "SF Pro";
+  color: rgba(20, 20, 20, 0.7);
+  text-align: center;
+}
+
+.rotation-allow {
+  opacity: 0;
+}
+.rotation-allow.active {
+  opacity: 1;
+}
+
+.rotation-item-description.active {
+  font-weight: 590;
+}
+
+.frame-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  display: flex;
+  overflow: hidden;
+}
+
+.frame-card-title {
+  font-family: "SF Pro";
+  color: #141414;
+  font-weight: 590;
+  margin-bottom: 16px;
+}
+
+.frame-card-description {
+  font-family: "SF Pro";
+  font-weight: 400;
+  color: rgba(20, 20, 20, 0.7);
+  font-weight: 400;
+}
+
+.frame-more-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.footer {
+  background: #fafafa;
+  width: 100vw;
+  box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+}
+
+.footer-text {
+  font-weight: 510;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.frame-card-description .sign-up-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .basic-header {
+    height: 100px;
+    width: 100vw;
+  }
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+  .logo-wrapper {
+    width: 100px;
+  }
+  .navigate-item {
+    font-weight: 510;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+  }
+  .navigate-list .margin-left1 {
+    margin-left: 64px;
+  }
+  .navigate-list .margin-left2 {
+    margin-left: 52px;
+  }
+  .sign-up-button {
+    width: 100px;
+    height: 48px;
+    margin-left: 24px;
+    margin-right: 32px;
+  }
+  .login-text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .main {
+    padding-top: 147px;
+  }
+  .main-title {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 80px;
+  }
+
+  .main-description1 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 32px;
+  }
+
+  .main-description2 {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 16px;
+    margin-bottom: 52px;
+  }
+
+  .button-black {
+    width: 114px;
+    height: 52px;
+    padding: 16px 24px;
+    font-weight: 510;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .rotation-pic {
+    width: 1120px;
+    margin-top: 74px;
+    margin-bottom: 26px;
+  }
+  .rotation-list {
+    width: 820px;
+    margin-top: 26px;
+    margin-bottom: 30px;
+  }
+  .rotation-allow {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 14px;
+  }
+  .rotation-item-card {
+    width: 94px;
+    height: 94px;
+  }
+  .rotation-item-card-icon {
+    width: 42px;
+    height: 42px;
+  }
+  .rotation-item-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 18px;
+    width: 142px;
+  }
+  .frame-card {
+    margin-top: 64px;
+    flex-direction: row;
+    width: 1120px;
+    justify-content: space-between;
+  }
+  .frame-card-text {
+    padding-top: 120px;
+    padding-left: 92px;
+  }
+  .frame-card-title {
+    font-size: 32px;
+    line-height: 42px;
+    width: 334px;
+  }
+  .frame-card-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .frame-card-pic {
+    width: 720px;
+  }
+  .frame-more-card {
+    width: 1120px;
+    padding: 72px;
+    margin-top: 64px;
+    margin-bottom: 146px;
+  }
+  .footer {
+    padding: 45px 162px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .basic-header {
+    height: 56px;
+    width: 100vw;
+  }
+  .logo {
+    width: 18px;
+    height: 18px;
+  }
+  .logo-wrapper {
+    width: 56px;
+  }
+  .navigate-item {
+    font-weight: 510;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+  }
+  .navigate-list .margin-left1 {
+    margin-left: 36px;
+  }
+  .navigate-list .margin-left2 {
+    margin-left: 29px;
+  }
+  .sign-up-button {
+    width: 70px;
+    height: 26px;
+    margin-left: 13px;
+    margin-right: 18px;
+  }
+  .login-text {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .main {
+    padding-top: 100px;
+  }
+  .main-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .main-description1 {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 18px;
+  }
+  .main-description2 {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+  }
+
+  .button-black {
+    width: 71px;
+    height: 30px;
+    padding: 9px 14px;
+    font-weight: 510;
+    font-size: 12px;
+    line-height: 11px;
+  }
+  .rotation-pic {
+    width: 90vw;
+    margin-top: 55px;
+    margin-bottom: 14px;
+  }
+  .rotation-list {
+    width: 90vw;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  .rotation-allow {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+  }
+  .rotation-item-card {
+    width: 52px;
+    height: 52px;
+  }
+  .rotation-item-card-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .rotation-item-description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+    width: 80px;
+  }
+  .frame-card {
+    width: 90vw;
+    margin-top: 36px;
+    flex-direction: column;
+  }
+  .frame-card-text {
+    padding: 60px 50px 0;
+  }
+  .frame-card-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .frame-card-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .frame-card-pic {
+    width: 100%;
+  }
+  .frame-more-card {
+    margin-top: 36px;
+    width: 90vw;
+    padding: 48px;
+    margin-bottom: 64px;
+  }
+  .footer {
+    padding: 32px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
